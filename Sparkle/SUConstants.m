@@ -26,7 +26,7 @@ NSString *const SUBundleIdentifier = @SPARKLE_BUNDLE_IDENTIFIER;
 NSString *const SUTechnicalErrorInformationKey = @"SUTechnicalErrorInformation";
 
 NSString *const SUHasLaunchedBeforeKey = @"SUHasLaunchedBefore";
-NSString *const SUFeedURLKey = @"SUFeedURL";
+SU_EXPORT NSString *const SUFeedURLKey = @"SUFeedURL";
 NSString *const SUShowReleaseNotesKey = @"SUShowReleaseNotes";
 NSString *const SUSkippedVersionKey = @"SUSkippedVersion";
 NSString *const SUScheduledCheckIntervalKey = @"SUScheduledCheckInterval";
@@ -37,7 +37,7 @@ NSString *const SUPublicDSAKeyFileKey = @"SUPublicDSAKeyFile";
 NSString *const SUAutomaticallyUpdateKey = @"SUAutomaticallyUpdate";
 NSString *const SUAllowsAutomaticUpdatesKey = @"SUAllowsAutomaticUpdates";
 NSString *const SUEnableSystemProfilingKey = @"SUEnableSystemProfiling";
-NSString *const SUEnableAutomaticChecksKey = @"SUEnableAutomaticChecks";
+SU_EXPORT NSString *const SUEnableAutomaticChecksKey = @"SUEnableAutomaticChecks";
 NSString *const SUSendProfileInfoKey = @"SUSendProfileInfo";
 NSString *const SULastProfileSubmitDateKey = @"SULastProfileSubmissionDate";
 NSString *const SUPromptUserOnFirstLaunchKey = @"SUPromptUserOnFirstLaunch";
