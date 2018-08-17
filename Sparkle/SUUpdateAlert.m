@@ -263,7 +263,7 @@ static NSString *const SUUpdateAlertTouchBarIndentifier = @"" SPARKLE_BUNDLE_IDE
     return finalString;
 }
 
-- (void)webView:(WebView *)sender didFinishLoadForFrame:frame
+- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame
 {
     if ([frame parentFrame] == nil) {
         self.webViewFinishedLoading = YES;
@@ -329,14 +329,18 @@ static NSString *const SUUpdateAlertTouchBarIndentifier = @"" SPARKLE_BUNDLE_IDE
 
 - (NSTouchBar *)makeTouchBar NS_AVAILABLE_MAC(10_12_2)
 {
-    NSTouchBar *touchBar = [[NSClassFromString(@"NSTouchBar") alloc] init];
+    NSTouchBar *touchBar = [(NSTouchBar *)[NSClassFromString(@"NSTouchBar") alloc] init];
     touchBar.defaultItemIdentifiers = @[SUUpdateAlertTouchBarIndentifier,];
     touchBar.principalItemIdentifier = SUUpdateAlertTouchBarIndentifier;
     touchBar.delegate = self;
     return touchBar;
 }
 
+<<<<<<< HEAD
 - (NSTouchBarItem *)touchBar:(NSTouchBar * __unused)touchBar makeItemForIdentifier:(NSTouchBarItemIdentifier)identifier NS_AVAILABLE_MAC(10_12_2)
+=======
+- (NSTouchBarItem *)touchBar:(NSTouchBar * __unused)touchBar makeItemForIdentifier:(NSTouchBarItemIdentifier)identifier API_AVAILABLE(macos(10.12.2))
+>>>>>>> upstream/master
 {
     if ([identifier isEqualToString:SUUpdateAlertTouchBarIndentifier]) {
         NSCustomTouchBarItem* item = [(NSCustomTouchBarItem *)[NSClassFromString(@"NSCustomTouchBarItem") alloc] initWithIdentifier:identifier];

@@ -136,14 +136,14 @@ static NSString *const SUStatusControllerTouchBarIndentifier = @"" SPARKLE_BUNDL
 
 - (NSTouchBar *)makeTouchBar NS_AVAILABLE_MAC(10_12_2)
 {
-    NSTouchBar *touchBar = [[NSClassFromString(@"NSTouchBar") alloc] init];
+    NSTouchBar *touchBar = [(NSTouchBar *)[NSClassFromString(@"NSTouchBar") alloc] init];
     touchBar.defaultItemIdentifiers = @[ SUStatusControllerTouchBarIndentifier,];
     touchBar.principalItemIdentifier = SUStatusControllerTouchBarIndentifier;
     touchBar.delegate = self;
     return touchBar;
 }
 
-- (NSTouchBarItem *)touchBar:(NSTouchBar * __unused)touchBar makeItemForIdentifier:(NSTouchBarItemIdentifier)identifier NS_AVAILABLE_MAC(10_12_2)
+- (NSTouchBarItem *)touchBar:(NSTouchBar * __unused)touchBar makeItemForIdentifier:(NSTouchBarItemIdentifier)identifier API_AVAILABLE(macos(10.12.2))
 {
     if ([identifier isEqualToString:SUStatusControllerTouchBarIndentifier]) {
         NSCustomTouchBarItem *item = [(NSCustomTouchBarItem *)[NSClassFromString(@"NSCustomTouchBarItem") alloc] initWithIdentifier:identifier];
