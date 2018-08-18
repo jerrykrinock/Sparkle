@@ -1698,11 +1698,7 @@
 			attributes = {
 				CLASSPREFIX = SU;
 				LastSwiftUpdateCheck = 0800;
-<<<<<<< HEAD
-				LastUpgradeCheck = 0900;
-=======
 				LastUpgradeCheck = 0920;
->>>>>>> upstream/master
 				ORGANIZATIONNAME = "Sparkle Project";
 				TargetAttributes = {
 					5AA96C541E0AE0DB00CA4346 = {
@@ -1724,11 +1720,7 @@
 						TestTargetID = 61B5F90109C4CEE200B25A18;
 					};
 					8DC2EF4F0486A6940098B216 = {
-<<<<<<< HEAD
-						LastSwiftMigration = 0810;
-=======
 						LastSwiftMigration = 0920;
->>>>>>> upstream/master
 					};
 				};
 			};
@@ -2476,13 +2468,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CA0D94A70100DD942E /* ConfigFrameworkDebug.xcconfig */;
 			buildSettings = {
-<<<<<<< HEAD
-=======
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
->>>>>>> upstream/master
 				SWIFT_VERSION = 3.0;
 			};
 			name = Coverage;
@@ -2538,13 +2527,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CA0D94A70100DD942E /* ConfigFrameworkDebug.xcconfig */;
 			buildSettings = {
-<<<<<<< HEAD
-=======
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
->>>>>>> upstream/master
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -2553,12 +2539,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941D50D94A70100DD942E /* ConfigFrameworkRelease.xcconfig */;
 			buildSettings = {
-<<<<<<< HEAD
-=======
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
->>>>>>> upstream/master
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -2580,15 +2563,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CC0D94A70100DD942E /* ConfigCommonRelease.xcconfig */;
 			buildSettings = {
-<<<<<<< HEAD
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-=======
->>>>>>> upstream/master
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
