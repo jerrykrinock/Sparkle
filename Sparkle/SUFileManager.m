@@ -784,8 +784,11 @@ static BOOL SUMakeRefFromURL(NSURL *url, FSRef *ref, NSError **error) {
         return NO;
     }
 
+#if DEBUG
+#else
     NSLog(@"Sparkle: Authorization required to change permissions of %@ to match %@", targetURL, matchURL);
-
+#endif
+    
     NSError *executeError = nil;
     BOOL success = [self _authorizeAndExecuteCommand:SUFileOpChangeOwnerAndGroupCommand sourcePath:targetPath destinationPath:matchPath error:&executeError];
     if (!success && error != NULL) {

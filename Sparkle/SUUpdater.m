@@ -297,7 +297,10 @@ static NSString *const SUUpdaterDefaultsObservationContext = @"SUUpdaterDefaults
             NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.apple.notificationcenterui"];
             BOOL dnd = [defaults boolForKey:@"doNotDisturb"];
             if (dnd) {
+#if DEBUG
+#else
                 SULog(SULogLevelDefault, @"Delayed update, because Do Not Disturb is on");
+#endif
                 [self updateLastUpdateCheckDate];
                 [self scheduleNextUpdateCheck];
                 return;
